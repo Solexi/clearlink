@@ -1,0 +1,247 @@
+import { Flex, Box, Image, Text } from "@chakra-ui/react"
+import logo from "../../assets/images/Group.png";
+import play from "../../assets/images/play-store.png";
+import app from "../../assets/images/app-store.png";
+
+const Footer = () => {
+    return (
+        <Flex
+            px={"7vw"}
+            pt={"96px"}
+            pb={"48px"}
+            gap={"100px"}
+            flexDir={"row"}
+        >
+            <Box
+                display={"flex"}
+                flexDir={"column"}
+                gap={"32px"}
+                w={"25vw"}
+            >
+                <Flex
+                    align={"center"}
+                    gap={"10px"}
+                >
+                    <Image
+                        src={logo}
+                        w={"25.384px"}
+                        h={"28px"}
+                    />
+                    <Text
+                        fontSize={"24px"}
+                        fontWeight={600}
+                        m={"0px"}
+                        color={"#101828"}
+                    >
+                        ClearLink<span style={{ color: "#528BFF" }}>.</span>
+                    </Text>
+                </Flex>
+                <Text
+                    fontSize={"17px"}
+                    fontWeight={400}
+                    color={"var(--Gray-600, #475467)"}
+                    lineHeight={"28px"}
+                >
+                    ClearLink is your gateway to effortless, high-quality video conferencing. Join us in shaping the future of communication!
+                </Text>
+            </Box>
+            <Flex
+                flexDir={"row"}
+                gap={"32px"}
+                w={"55vw"}
+            >
+                <Box
+                    display={"flex"}
+                    flexDir={"column"}
+                    gap={"16px"}
+                    w={"160px"}
+                >
+                    <Text
+                        fontSize={"16px"}
+                        fontWeight={600}
+                        color={"var(--Gray-500, #667085)"}
+                        lineHeight={"24px"}
+                    >
+                        Product
+                    </Text>
+                    <Box
+                        display={"flex"}
+                        flexDir={"column"}
+                        gap={"16px"}
+                        fontWeight={600}
+                        lineHeight={"28px"}
+                        fontSize={"18px"}
+                        color={"var(--Gray-600, #475467)"}
+                    >
+                        <Text>
+                            Overview
+                        </Text>
+                        <Text>
+                            Features
+                        </Text>
+                        <Text>
+                            Solutions
+                        </Text>
+                        <Text>
+                            Tutorials
+                        </Text>
+                        <Text>
+                            Pricing
+                        </Text>
+                    </Box>
+                </Box>
+                <Box
+                    display={"flex"}
+                    flexDir={"column"}
+                    gap={"16px"}
+                    w={"160px"}
+                >
+                    <Text
+                        fontSize={"16px"}
+                        fontWeight={600}
+                        color={"var(--Gray-500, #667085)"}
+                        lineHeight={"24px"}
+                    >
+                        Company
+                    </Text>
+                    <Box
+                        display={"flex"}
+                        flexDir={"column"}
+                        gap={"16px"}
+                        fontWeight={600}
+                        lineHeight={"28px"}
+                        fontSize={"18px"}
+                        color={"var(--Gray-600, #475467)"}
+                    >
+                        <Text>
+                            About Us
+                        </Text>
+                        <Text>
+                            Careers
+                        </Text>
+                        <Text>
+                            Press
+                        </Text>
+                        <Text>
+                            News
+                        </Text>
+                        <Text>
+                            Contact
+                        </Text>
+                    </Box>
+                </Box>
+                <Box
+                    display={"flex"}
+                    flexDir={"column"}
+                    gap={"16px"}
+                    w={"160px"}
+                >
+                    <Text
+                        fontSize={"16px"}
+                        fontWeight={600}
+                        color={"var(--Gray-500, #667085)"}
+                        lineHeight={"24px"}
+                    >
+                        Resources
+                    </Text>
+                    <Box
+                        display={"flex"}
+                        flexDir={"column"}
+                        gap={"16px"}
+                        fontWeight={600}
+                        lineHeight={"28px"}
+                        fontSize={"18px"}
+                        color={"var(--Gray-600, #475467)"}
+                    >
+                        <Text>
+                            Blog
+                        </Text>
+                        <Text>
+                            Events
+                        </Text>
+                        <Text>
+                            Help Centre
+                        </Text>
+                        <Text>
+                            Tutorials
+                        </Text>
+                        <Text>
+                            Support
+                        </Text>
+                    </Box>
+                </Box>
+                <Box
+                    display={"flex"}
+                    flexDir={"column"}
+                    gap={"16px"}
+                    w={"160px"}
+                >
+                    <Text
+                        fontSize={"16px"}
+                        fontWeight={600}
+                        color={"var(--Gray-500, #667085)"}
+                        lineHeight={"24px"}
+                    >
+                        Legal
+                    </Text>
+                    <Box
+                        display={"flex"}
+                        flexDir={"column"}
+                        gap={"16px"}
+                        fontWeight={600}
+                        lineHeight={"28px"}
+                        fontSize={"18px"}
+                        color={"var(--Gray-600, #475467)"}
+                    >
+                        <Text>
+                            Terms
+                        </Text>
+                        <Text>
+                            Privacy
+                        </Text>
+                        <Text>
+                            Cookies
+                        </Text>
+                        <Text>
+                            Licenses
+                        </Text>
+                        <Text>
+                            Contact
+                        </Text>
+                    </Box>
+                </Box>
+                <Box
+                    display={"flex"}
+                    flexDir={"column"}
+                    gap={"16px"}
+                >
+                    <Text
+                        fontSize={"16px"}
+                        lineHeight={"24px"}
+                        fontWeight={600}
+                    >
+                        Get the app
+                    </Text>
+                    <Box
+                        display={"flex"}
+                        flexDir={"column"}
+                        gap={"16px"}
+                    >
+                        <Image
+                            src={app}
+                            w={"120px"}
+                            h={"40px"}
+                        />
+                        <Image
+                            src={play}
+                            w={"120px"}
+                            h={"40px"}
+                        />
+                    </Box>
+                </Box>
+            </Flex>
+        </Flex>
+    )
+}
+
+export default Footer
