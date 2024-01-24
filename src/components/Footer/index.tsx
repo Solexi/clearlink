@@ -214,6 +214,7 @@ const Footer = () => {
                     display={"flex"}
                     flexDir={"column"}
                     gap={"16px"}
+                    w={"135px"}
                 >
                     <Text
                         fontSize={"16px"}
